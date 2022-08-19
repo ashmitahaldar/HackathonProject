@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:psg_hackathon_project/design/Button.dart';
 
 class Login extends StatefulWidget {
@@ -28,7 +29,7 @@ class _LoginState extends State<Login> {
                     fontWeight: FontWeight.bold,
                     fontSize: 48)),
             const Text(
-              "Caption",
+              "Jobs in touch, Help on call, People in reach",
               style: TextStyle(
                 color: Colors.white60,
                 fontSize: 20,
