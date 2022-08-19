@@ -81,9 +81,9 @@ class _HomePageState extends State<HomePage> {
     ),
       ),
     );
-
+  }
+}
        
-
 Widget _buildTitle() => Text(
       "Welcome to Prise!",
       textAlign: TextAlign.left,
