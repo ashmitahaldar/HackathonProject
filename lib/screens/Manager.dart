@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/material.dart';
+import 'package:psg_hackathon_project/screens/community.dart';
 import 'package:psg_hackathon_project/screens/home_page.dart';
 
 import 'Destress.dart';
@@ -17,7 +18,9 @@ class _ManagerState extends State<Manager> {
   final List<Widget> pages = [
     HomePage(title: "Prise"),
     Destress(),
-    Container(),
+    Community(
+      title: "Comm",
+    ),
   ];
 
   final List<String> pg = ["Home", "Destress", "Container,"];
@@ -55,7 +58,7 @@ class _ManagerState extends State<Manager> {
             BottomNavigationBarItem(
                 icon: Icon(Icons.safety_check), label: "Destress"),
             BottomNavigationBarItem(
-                icon: Icon(Icons.contact_mail), label: "Test"),
+                icon: Icon(Icons.people), label: "Community"),
           ],
           currentIndex: index,
           onTap: change),
