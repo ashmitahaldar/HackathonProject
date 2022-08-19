@@ -1,5 +1,6 @@
 import "package:flutter/material.dart";
 import 'package:psg_hackathon_project/screens/Destress.dart';
+import 'package:psg_hackathon_project/screens/home_page.dart';
 
 class Button extends StatelessWidget {
   Color color;
@@ -18,8 +19,8 @@ class Button extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.pushReplacement(
-            context, MaterialPageRoute(builder: (context) => Destress()));
+        Navigator.pushReplacement(context,
+            MaterialPageRoute(builder: (context) => HomePage(title: "Prise")));
       },
       child: Container(
         width: MediaQuery.of(context).size.width - 50,

@@ -32,6 +32,7 @@ class _LoginState extends State<Login> {
                     fontSize: 48)),
             const Text(
               "Jobs in touch, Help on call, People in reach",
+              textAlign: TextAlign.center,
               style: TextStyle(
                 color: Colors.white60,
                 fontSize: 20,
