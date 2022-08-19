@@ -23,7 +23,7 @@ class _ManagerState extends State<Manager> {
     ),
   ];
 
-  final List<String> pg = ["Home", "Destress", "Container,"];
+  final List<String> pg = ["Home", "Destress", "Community"];
 
   int index = 0;
 
@@ -40,6 +40,7 @@ class _ManagerState extends State<Manager> {
         headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
           return <Widget>[
             CupertinoSliverNavigationBar(
+                heroTag: "Wwawa",
                 backgroundColor: const Color(0xffff9197),
                 largeTitle: Text(pg.elementAt(index),
                     style: TextStyle(color: Colors.white)),
