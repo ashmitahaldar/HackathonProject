@@ -28,19 +28,58 @@ class _HomePageState extends State<HomePage> {
             )
           ];
         },
-        body: 
-        Center(
-          child: 
+        body: Column(
+          children: <Widget>[
+            SizedBox(height: 50),
             SizedBox(
-              width: 100,
-              height: 50,
+              width: 200,
+              height: 100,
               child: ElevatedButton(
-              onPressed: () {},
-              child: Text("test"),
+                onPressed: () {},
+                child: Text("Community"),
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.green,
+                ),
           ),
+          ),
+          SizedBox(height: 20),
+          SizedBox(
+            width: 200,
+             height: 100,
+             child: ElevatedButton(
+              onPressed: () {},
+              child: Text("Service Search"),
+              style: ElevatedButton.styleFrom(
+                  primary: Colors.blue,
+                ),
+         ),
         ),
-          
+          SizedBox(height: 20),
+          SizedBox(
+            width: 200,
+             height: 100,
+             child: ElevatedButton(
+              onPressed: () {},
+              child: Text("Job Search"),
+              style: ElevatedButton.styleFrom(
+                  primary: Colors.red
+                ),
+         ),
+        ),
+          SizedBox(height: 20),
+          SizedBox(
+            width: 200,
+             height: 100,
+             child: ElevatedButton(
+              onPressed: () {},
+              child: Text("Connect"),
+              style: ElevatedButton.styleFrom(
+                  primary: Colors.orange,
+                ),
+         ),
         )
+      ],
+    ),
       ),
     );
   }
