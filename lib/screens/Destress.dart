@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import 'package:psg_hackathon_project/design/MessageTile.dart';
 
 class Destress extends StatefulWidget {
   Destress({Key? key}) : super(key: key);
@@ -12,18 +13,22 @@ class _DestressState extends State<Destress> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xffFF6C61),
-      appBar: AppBar(
-        backgroundColor: const Color(0xffff9197),
-        title: Text("Destress."),
-      ),
       body: Container(
         child: Column(
           children: [
             ListView(
               shrinkWrap: true,
-              children: [],
+              children: [
+                MessageTile(
+                    message: "You can talk to me about your problems.",
+                    imgPath: "assets/hackathon-psg-removebg-preview.png",
+                    isLeft: true),
+                MessageTile(
+                    message: "Thank you so much.",
+                    imgPath: "assets/hackathon-psg-removebg-preview.png",
+                    isLeft: false),
+              ],
             ),
-            Text("Destress"),
             Expanded(child: Container()),
             const Padding(
               padding: const EdgeInsets.all(8.0),
