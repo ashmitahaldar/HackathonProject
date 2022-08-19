@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:psg_hackathon_project/design/Button.dart';
+import 'package:psg_hackathon_project/screens/Destress.dart';
 
+//Chat,
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
 
@@ -44,14 +46,16 @@ class _LoginState extends State<Login> {
               ),
             ),
             Button(
+              onpress: () {},
               text: "Login",
               color: const Color(0xff982D34),
             ),
             Button(
+              onpress: () {},
               text: "Sign up!",
               color: const Color(0xffff9197),
             ),
-			const SizedBox(height: 10),
+            const SizedBox(height: 10),
             const Text(
               "Be one with YOUR community",
               style: TextStyle(
