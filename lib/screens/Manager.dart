@@ -4,6 +4,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/material.dart';
 import 'package:psg_hackathon_project/screens/community.dart';
 import 'package:psg_hackathon_project/screens/home_page.dart';
+import 'package:psg_hackathon_project/screens/job_search.dart';
 
 import 'Destress.dart';
 
@@ -52,14 +53,20 @@ class _ManagerState extends State<Manager> {
         body: pages.elementAt(index),
       ),
       bottomNavigationBar: BottomNavigationBar(
-          backgroundColor: const Color(0xffff9197),
-          fixedColor: Colors.white,
+          selectedItemColor: const Color(0xff982D34),
           items: [
-            BottomNavigationBarItem(icon: Icon(Icons.home), label: "home"),
             BottomNavigationBarItem(
-                icon: Icon(Icons.safety_check), label: "Destress"),
+                icon: Icon(Icons.home),
+                label: "home",
+                backgroundColor: const Color(0xff982D34)),
             BottomNavigationBarItem(
-                icon: Icon(Icons.people), label: "Community"),
+                icon: Icon(Icons.safety_check),
+                label: "Destress",
+                backgroundColor: const Color(0xff982D34)),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.people),
+                label: "Community",
+                backgroundColor: const Color(0xff982D34)),
           ],
           currentIndex: index,
           onTap: change),
