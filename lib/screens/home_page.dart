@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:psg_hackathon_project/screens/Destress.dart';
@@ -18,15 +20,17 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: const Color(0xffFF6C61),
+        backgroundColor: Colors.teal,//const Color(0xffFF6C61),
         body: SingleChildScrollView(
           child: Column(
+            // decoration: BoxDecoration(
+            //       image: const DecorationImage(image: AssetImage("assets/homepagebg.png"))),
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               SizedBox(height: 40),
 
               const Text(
-                "Welcome!",
+                "Welcome to Prise!",
                 style: TextStyle(
                     fontSize: 30,
                     fontWeight: FontWeight.bold,
@@ -45,7 +49,9 @@ class _HomePageState extends State<HomePage> {
                       Navigator.push(context,
                         MaterialPageRoute(builder: (context) => ServiceSearch()));
                     },
-                    child: Text("Service Search"),
+                    child: Text("Service Search",
+                      style: TextStyle(
+                        fontSize: 20,)),
                     style: ElevatedButton.styleFrom(
                       primary: Colors.orange,
                     ),
@@ -73,7 +79,9 @@ class _HomePageState extends State<HomePage> {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) => JobSearch()));
                   },
-                  child: Text("Job Search"),
+                  child: Text("Job Search",
+                      style: TextStyle(
+                        fontSize: 20,)),
                   style: ElevatedButton.styleFrom(primary: Colors.red),
                 ),
               ),

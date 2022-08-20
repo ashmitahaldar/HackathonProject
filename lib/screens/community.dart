@@ -124,7 +124,7 @@ class _CommunityState extends State<Community> {
                         decoration: BoxDecoration(
                             color: Colors.purple[600],
                             image: DecorationImage(
-                                image: Image.asset("assets/ss.png").image,
+                                image: Image.asset("assets/gayrights.png").image,
                                 fit: BoxFit.cover,
                                 opacity: 0.4)),
                         child: const Center(
@@ -140,7 +140,7 @@ class _CommunityState extends State<Community> {
                         decoration: BoxDecoration(
                             color: Colors.purple[500],
                             image: DecorationImage(
-                                image: Image.asset("assets/ss.png").image,
+                                image: Image.asset("assets/photgraphy.png").image,
                                 fit: BoxFit.cover,
                                 opacity: 0.4)),
                         child: const Center(
@@ -156,7 +156,7 @@ class _CommunityState extends State<Community> {
                         decoration: BoxDecoration(
                             color: Colors.purple[400],
                             image: DecorationImage(
-                                image: Image.asset("assets/ss.png").image,
+                                image: Image.asset("assets/lesbian.png").image,
                                 fit: BoxFit.cover,
                                 opacity: 0.4)),
                         child: const Center(
@@ -172,7 +172,7 @@ class _CommunityState extends State<Community> {
                         decoration: BoxDecoration(
                             color: Colors.purple[300],
                             image: DecorationImage(
-                                image: Image.asset("assets/ss.png").image,
+                                image: Image.asset("assets/hackathon-psg-removebg-preview.png").image,
                                 fit: BoxFit.cover,
                                 opacity: 0.4)),
                         child: const Center(
