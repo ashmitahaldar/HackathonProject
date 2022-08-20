@@ -20,13 +20,19 @@ class _HomePageState extends State<HomePage> {
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
-            SizedBox(height: 50),
+            SizedBox(height: 40),
             
+            const Text("Welcome!", 
+              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+            ),
+
+            SizedBox(height: 20),
+
             Container(
               alignment: Alignment.center,
                child: SizedBox(
-                  width: 200,
-                  height: 100,
+                  width: 300,
+                  height: 200,
                   child: ElevatedButton(
                   onPressed: () {},
                   child: Text("Service Search"),
@@ -50,8 +56,8 @@ class _HomePageState extends State<HomePage> {
             
             SizedBox(height: 20),
             SizedBox(
-              width: 200,
-              height: 100,
+              width: 300,
+              height: 200,
               child: ElevatedButton(
                 onPressed: () {},
                 child: Text("Job Search"),
