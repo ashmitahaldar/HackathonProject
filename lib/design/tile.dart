@@ -4,7 +4,8 @@ import "package:flutter/material.dart";
 
 class Tile extends StatelessWidget {
   String name;
-  Tile({Key? key, required this.name}) : super(key: key);
+  String description;
+  Tile({Key? key, required this.name, required this.description}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -13,8 +14,7 @@ class Tile extends StatelessWidget {
         ListTile(
           title: Text(name),
           isThreeLine: true,
-          subtitle: Text(
-              "LGBTQ/Special need friendly job offer!\nNext Job interview available in 5 hours, 3km away from your location"),
+          subtitle: Text(description),
           leading: CircleAvatar(
               radius: 20,
               foregroundImage: Image.asset(
@@ -27,3 +27,6 @@ class Tile extends StatelessWidget {
     );
   }
 }
+
+// Text(
+//   "LGBTQ/Special need friendly job offer!\nNext Job interview available in 5 hours, 3km away from your location")

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:psg_hackathon_project/screens/Destress.dart';
 import 'package:psg_hackathon_project/screens/community.dart';
 import 'package:psg_hackathon_project/screens/job_search.dart';
+import 'package:psg_hackathon_project/screens/service_search.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key? key, required this.title}) : super(key: key);
@@ -40,7 +41,10 @@ class _HomePageState extends State<HomePage> {
                   width: 300,
                   height: 200,
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => ServiceSearch()));
+                    },
                     child: Text("Service Search"),
                     style: ElevatedButton.styleFrom(
                       primary: Colors.orange,

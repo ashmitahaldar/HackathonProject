@@ -12,21 +12,27 @@ class _JobSearchState extends State<JobSearch> {
   final List<Tile> tiles = [
     Tile(
       name: "Job 1",
+      description: "LGBTQ/Special need friendly job offer!\nNext Job interview available in 5 hours, 3km away from your location",
     ),
     Tile(
       name: "Job 2",
+      description: "LGBTQ/Special need friendly job offer!\nNext Job interview available in 5 hours, 3km away from your location",
     ),
     Tile(
       name: "Job 3",
+      description: "LGBTQ/Special need friendly job offer!\nNext Job interview available in 5 hours, 3km away from your location",
     ),
     Tile(
       name: "Job 4",
+      description: "LGBTQ/Special need friendly job offer!\nNext Job interview available in 5 hours, 3km away from your location",
     ),
     Tile(
       name: "Job 5",
+      description: "LGBTQ/Special need friendly job offer!\nNext Job interview available in 5 hours, 3km away from your location",
     ),
     Tile(
       name: "Job 6",
+      description: "LGBTQ/Special need friendly job offer!\nNext Job interview available in 5 hours, 3km away from your location",
     ),
   ];
 
