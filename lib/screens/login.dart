@@ -15,7 +15,7 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xffFF6C61),
+      backgroundColor: Colors.lightBlue,
       body: Container(
         width: MediaQuery.of(context).size.width,
         child: Column(
@@ -31,7 +31,7 @@ class _LoginState extends State<Login> {
                     fontWeight: FontWeight.bold,
                     fontSize: 48)),
             const Text(
-              "Jobs in touch, Help on call, People in reach",
+              "Work In Freedom, Hire to Subvert",
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: Colors.white60,

@@ -104,7 +104,7 @@ class _CommunityState extends State<Community> {
               SizedBox(height: 20),
 
               const Text(
-                " Feed",
+                " Feed - Explore Accounts",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 30,
@@ -112,13 +112,14 @@ class _CommunityState extends State<Community> {
               ),
               Container(
                 padding: EdgeInsets.only(left: 10, right: 10),
-                height: 100,
+                height: 400,
                 child: ListView(
                   padding: EdgeInsets.all(5),
-                  scrollDirection: Axis.horizontal,
+                  scrollDirection: Axis.vertical,
                   children: <Widget>[
                     Container(
                       width: 200,
+                      height: 180,
                       decoration: BoxDecoration(
                           color: Colors.purple[600],
                           image: DecorationImage(
@@ -127,12 +128,14 @@ class _CommunityState extends State<Community> {
                               opacity: 0.4)),
                       child: const Center(
                           child: Text(
-                        'LGBTQ Marriage',
+                        'Gayrights',
                         style: TextStyle(fontSize: 18, color: Colors.white),
                       )),
                     ),
+                    SizedBox(height: 10),
                     Container(
                       width: 200,
+                      height: 180,
                       decoration: BoxDecoration(
                           color: Colors.purple[500],
                           image: DecorationImage(
@@ -141,12 +144,14 @@ class _CommunityState extends State<Community> {
                               opacity: 0.4)),
                       child: const Center(
                           child: Text(
-                        'Adoption',
+                        'Visually Impaired Photographers',
                         style: TextStyle(fontSize: 18, color: Colors.white),
                       )),
                     ),
+                    SizedBox(height: 10),
                     Container(
                       width: 200,
+                      height: 180,
                       decoration: BoxDecoration(
                           color: Colors.purple[400],
                           image: DecorationImage(
@@ -155,12 +160,14 @@ class _CommunityState extends State<Community> {
                               opacity: 0.4)),
                       child: const Center(
                           child: Text(
-                        'Latest Job Listings',
+                        'Lesbian Pride',
                         style: TextStyle(fontSize: 18, color: Colors.white),
                       )),
                     ),
+                    SizedBox(height: 10),
                     Container(
                       width: 200,
+                      height: 180,
                       decoration: BoxDecoration(
                           color: Colors.purple[300],
                           image: DecorationImage(
@@ -169,7 +176,7 @@ class _CommunityState extends State<Community> {
                               opacity: 0.4)),
                       child: const Center(
                           child: Text(
-                        'What\'s New',
+                        'Prise Community',
                         style: TextStyle(fontSize: 18, color: Colors.white),
                       )),
                     ),
